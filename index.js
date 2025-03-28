@@ -16,6 +16,10 @@ app.use(express.json());
 
 app.use("/movies", router)
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the movie database!");
+})
+
 app.listen(PORT, () => {
   console.log("Server running on port 8000");
   DbConnection();
