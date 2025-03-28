@@ -3,7 +3,7 @@ import Movies from "../Schema/MoviesSchema.js";
 
 export const getAllMovies = async (req, res) => {
     try {
-        const movies = await Movies.find();
+        const movies = await Movies.find().limit(20);
         res.status(200).json(movies);
     } catch (error) {
         console.log(`Error getting all movies controller: ${error}`);
