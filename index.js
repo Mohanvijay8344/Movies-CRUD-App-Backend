@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to the movie database!");
 })
 
-app.get('/all-movies', = async (req, res) => {
+app.get('/all-movies', async (req, res) => {
   try {
       const movies = await Movies.find();
       res.status(200).json(movies);
