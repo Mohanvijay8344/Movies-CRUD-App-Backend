@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/", router)
+app.use("/movies", router)
 
 app.listen(PORT, () => {
   console.log("Server running on port 8000");
