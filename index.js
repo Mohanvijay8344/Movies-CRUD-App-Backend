@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import DbConnection from "./DbConnection.js";
 import router from "./router/data.route.js";
 import cors from 'cors';
+import Movies from "./Schema/MoviesSchema.js";
 
 const PORT = 8000;
 
